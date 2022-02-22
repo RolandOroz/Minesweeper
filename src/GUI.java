@@ -5,6 +5,8 @@ import java.awt.*;
 
 public class GUI extends JFrame {
 
+    int spacing = 5;
+
     public GUI() {
         this.setTitle("Minesweeper");
         this.setSize(1286, 829);
@@ -21,6 +23,13 @@ public class GUI extends JFrame {
         public void paintComponent(Graphics g) {
             g.setColor(Color.DARK_GRAY);
             g.fillRect(0, 0, 1280, 800);
+            g.setColor(Color.gray);
+            for(int i = 0; i < 16; i++) {
+                for(int j = 0; j < 9; j++) {
+
+                    g.fillRect(spacing + i * 80, spacing + j* 80 + 80, 80-2 * spacing, 80-2 * spacing);
+                }
+            }
         }
     }
 
