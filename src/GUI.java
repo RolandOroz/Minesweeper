@@ -27,7 +27,7 @@ public class GUI extends JFrame {
             for(int i = 0; i < 16; i++) {
                 for(int j = 0; j < 9; j++) {
 
-                    g.fillRect(spacing + i * 80, spacing + j* 80 + 80, 80-2 * spacing, 80-2 * spacing);
+                    g.fillRect(spacing + i * 80, spacing + j * 80 + 80, 80-2 * spacing, 80-2 * spacing);
                 }
             }
         }
